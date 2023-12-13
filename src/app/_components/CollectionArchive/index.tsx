@@ -24,17 +24,17 @@ type Result = {
 }
 
 export type Props = {
-  className?: string;
-  relationTo?: 'products';
-  populateBy?: 'collection' | 'selection';
-  showPageRange?: boolean;
-  onResultChange?: (result: Result) => void;
-  limit?: number;
-  populatedDocs?: ArchiveBlockProps['populatedDocs'];
-  populatedDocsTotal?: ArchiveBlockProps['populatedDocsTotal'];
-  categories?: ArchiveBlockProps['categories'];
-  sort: string; // Adicione a propriedade sort aqui
-};
+  className?: string
+  relationTo?: 'products'
+  populateBy?: 'collection' | 'selection'
+  showPageRange?: boolean
+  onResultChange?: (result: Result) => void
+  limit?: number
+  populatedDocs?: ArchiveBlockProps['populatedDocs']
+  populatedDocsTotal?: ArchiveBlockProps['populatedDocsTotal']
+  categories?: ArchiveBlockProps['categories']
+  sort: string // Adicione a propriedade sort aqui
+}
 
 export const CollectionArchive: React.FC<Props> = props => {
   const { categoryFilters, sort } = useFilter()
